@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills | Chayy Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-body: #b6cbce;
+      --color-heading: #eef3db;
+      --color-base: #033f47;
+      --color-base2: #022a30;
+      --color-brand: #e0f780;
+      --color-brand2: #deff58;
+      --font-base: "Bai Jamjuree", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-base);
+      background: var(--color-base2);
+      color: var(--color-body);
+    }
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      background: var(--color-base);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+      height: 100vh;
+      width: 200px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      text-align: left;
+      z-index: 10;
+    }
+    .navbar a {
+      text-decoration: none;
+      color: var(--color-body);
+      font-weight: 700;
+      transition: 0.4s ease;
+    }
+    .navbar a:hover, .navbar a.active {
+      color: var(--color-brand);
+      text-shadow: 0 0 10px var(--color-brand);
+    }
+    .section-title {
+      font-size: 48px;
+      margin: 50px 0;
+      letter-spacing: 2px;
+      text-shadow: 0 0 20px var(--color-brand);
+      color: var(--color-heading);
+      text-align: center;
+    }
+    .skills-list {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 50px;
+      max-width: 1000px;
+      margin: auto;
+      margin-left: 220px;
+    }
+    .skills-category {
+      text-align: center;
+    }
+    .skills-category h2 {
+      color: var(--color-brand);
+      text-shadow: 0 0 10px var(--color-brand);
+      font-size: 32px;
+    }
+    .skills-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      margin-top: 20px;
+    }
+    .skill {
+      padding: 20px;
+      background: var(--color-base);
+      border: 2px solid var(--color-brand);
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(224, 247, 128, 0.5);
+      transition: 0.4s;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .skill:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px rgba(224, 247, 128, 0.8);
+      background: var(--color-brand);
+      color: var(--color-base);
+    }
+    footer p {
+      margin-top: 50px;
+      padding: 20px;
+      background: var(--color-base);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+      font-size: 14px;
+      color: var(--color-body);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+
+<section class="section skills">
+  <div class="container">
+    <h1 class="section-title">My Skills 🚀</h1>
+    <div class="skills-list">
+      <div class="skills-category">
+        <h2>Programming</h2>
+        <div class="skills-items">
+          <div class="skill" onclick="window.location.href='https://www.geeksforgeeks.org/c-programming-language/'">C</div>
+          <div class="skill" onclick="window.location.href='https://www.geeksforgeeks.org/c-plus-plus/'">C++</div>
+        </div>
+      </div>
+      <div class="skills-category">
+        <h2>Database</h2>
+        <div class="skills-items">
+          <div class="skill" onclick="window.location.href='sql.htmhttps://www.w3schools.com/sql/l'">SQL</div>
+        </div>
+      </div>
+      <div class="skills-category">
+        <h2>Web Technologies</h2>
+        <div class="skills-items">
+          <div class="skill" onclick="window.location.href='https://www.w3schools.com/html/default.asp'">HTML</div>
+          <div class="skill" onclick="window.location.href='https://www.w3schools.com/css/default.asp'">CSS</div>
+          <div class="skill" onclick="window.location.href='https://youtu.be/pN6jk0uUrD8?feature=shared'">JavaScript</div>
+          <div class="skill" onclick="window.location.href='https://react.dev/'">React.js</div>
+        </div>
+      </div>
+      <div class="skills-category">
+        <h2>Others</h2>
+        <div class="skills-items">
+          <div class="skill" onclick="window.location.href='https://youtu.be/kbZejnPXyLM?feature=shared'">UX/UI DESGIN</div>
+          <div class="skill" onclick="window.location.href='https://youtu.be/31wzhvz0vsw?feature=shared'">FIGMA</div>
+          <div class="skill" onclick="window.location.href='https://youtu.be/IyR_uYsRdPs?feature=shared'">Adobe Photoshop</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</body>
+</html>

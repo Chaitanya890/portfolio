@@ -13,3 +13,14 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+
+function showPopup() {
+  setTimeout(() => {
+    document.getElementById("popup").style.display = "block";
+  }, 2000);
+}
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+

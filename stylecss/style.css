@@ -190,3 +190,42 @@
     height: 44px;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+  form button:hover {
+    background: var(--color-brand2);
+    transform: scale(1.1);
+    box-shadow: 0 0 15px var(--color-brand);
+  }
+  
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--color-base);
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    border-radius: 10px;
+    z-index: 1000;
+  }
+  .popup-content p {
+    color: var(--color-brand);
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .popup button {
+    padding: 10px 20px;
+    border: none;
+    background: var(--color-brand);
+    color: var(--color-base2);
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .popup button:hover {
+    background: var(--color-brand2);
+    box-shadow: 0 0 10px var(--color-brand);
+  }

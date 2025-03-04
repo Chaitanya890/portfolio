@@ -25,12 +25,12 @@
             <ul class  ="navbar-nav ms-auto flex-lg-column text-lg-center" >
 
               <li "class= nav-item >
-                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link" href="#Home">Home</a>
               </li>
             
               
                 <li class="nav-item">
-                    <a class="nav-link" href="skills">skills</a>
+                    <a class="nav-link" href="#skills">skills</a>
                 </li>
              
 
@@ -60,7 +60,7 @@
                             </span> from vizianagram, AP</h1>
                             <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300"> To obtain a challenging role in a reputable organization where I can apply my skills and experience to drive innovation
                 and growth.   </P>
-                <a  href="#work"class="btn btn-brand"> Explore My work</a>
+                <a  href="#projects"class="btn btn-brand"> Explore My work</a>
                 <a href="#" class="link-custom">📞 : +91 8897984455    </a>
                 <a href="https://mail.google.com/mail/?view=cm&to=chaitanyasri173@gmail.com" target="_blank" class="link-custom">
                     📧 : chaitanyasri173@gmail.com
@@ -75,7 +75,7 @@
       </section>
          <!--home -->
            <!--skills -->
-           <section id="Education" class="full-height px-lg-7">
+           <section id="skills" class="full-height px-lg-7">
             <div class="container"style="padding-top: 0.01px; padding-left:70px;">
 
                 <div class="row " >
@@ -94,7 +94,7 @@
                           </div>
                           <h5 class="mt-4 mb-2">Programming skills</h5>
                           <p> which includes of Programming language  </p>
-                          <a href="#" class="link-custom">Read More</a>
+                          <a href="skills.html" class="link-custom">Read More</a>
                       </div>
                   </div>
 
@@ -105,7 +105,7 @@
                         </div>
                         <h5 class="mt-4 mb-2">DATA BASES</h5>
                         <p>which includes of data base skills </p>
-                        <a href="#" class="link-custom">Read More</a>
+                        <a href="skills.html" class="link-custom">Read More</a>
                     </div>
                 </div>
                 <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
@@ -115,7 +115,7 @@
                       </div>
                       <h5 class="mt-4 mb-2">WEB TECHONOLGIES</h5>
                       <p>web design skils</p>
-                      <a href="#" class="link-custom">Read More</a>
+                      <a href="skills.html" class="link-custom">Read More</a>
                   </div>
                 </div>
                   <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
@@ -125,7 +125,7 @@
                         </div>
                         <h5 class="mt-4 mb-2"> OTHERS</h5>
                        
-                        <a href="#" class="link-custom">Read More</a>
+                        <a href="skills.html" class="link-custom">Read More</a>
                     </div>
              
               <!--education --> 
@@ -133,7 +133,7 @@
           </div>
 
           <!-- project-->
-          <section id="work" class="full-height px-lg-5">
+          <section id="projects" class="full-height px-lg-5">
             <div class="container">
 
                 <div class="row pb-4" data-aos="fade-up">
@@ -182,6 +182,18 @@
                       </div>
                   </div>
               </div>
+              <div class="col-md-3" data-aos="fade-up">
+                <div class="card-custom rounded-7 bg-base shadow-effect">
+                    <div class="card-custom-image rounded-4">
+                        <img class="rounded-4" src="./images/web-design-portfolio-768x492.png" alt="">
+                    </div>
+                    <div class="card-custom-content p-4">
+                        <h4>FIGMA</h4>
+                       
+                        <a href="#" class="link-custom">Read More</a>
+                    </div>
+                </div>
+            </div>
 
               
               
@@ -207,28 +219,40 @@
                 <h6 class="text-brand">CONTACT</h6>
                 <h1>Interested in working together? Let's talk
                 </h1>
-               
             </div>
 
             <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
-                <form action="#" class="row g-lg-3 gy-3">
+                <form action="https://formsubmit.co/chaitanyasri173@gmail.com" method="POST" class="row g-lg-3 gy-3" onsubmit="showPopup(); return true;">
                     <div class="form-group col-md-6">
-                        <input type="text" class="form-control" placeholder="Enter your name">
+                        <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
                     </div>
                     <div class="form-group col-md-6">
-                        <input type="email" class="form-control" placeholder="Enter your email">
+                        <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
                     </div>
                     <div class="form-group col-12">
-                        <input type="text" class="form-control" placeholder="Enter subject">
+                        <input type="text" name="subject" class="form-control" placeholder="Enter subject" required>
                     </div>
                     <div class="form-group col-12">
-                        <textarea name="" rows="4" class="form-control" placeholder="Enter your message"></textarea>
+                        <textarea name="message" rows="4" class="form-control" placeholder="Enter your message" required></textarea>
                     </div>
                     <div class="form-group col-12 d-grid">
                         <button type="submit" class="btn btn-brand">Contact me</button>
-                    </div></form>
-                </div>
+                    </div>
+                    <input type="hidden" name="_subject" value="New Portfolio Message!">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                </form>
             </div>
+        </div>
+    </div>
+</section>
+
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <p>✅ Message Sent Successfully!</p>
+    <button onclick="closePopup()">OK</button>
+  </div>
+</div>
 
 
 
