@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+      --color-body: #b6cbce;
+      --color-heading: #eef3db;
+      --color-base: #033f47;
+      --color-base2: #022a30;
+      --color-brand: #e0f780;
+      --color-brand2: #deff58;
+      --font-base: "Bai Jamjuree", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-base);
+      background: var(--color-base2);
+      color: var(--color-body);
+    }
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      background: var(--color-base);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+      height: 100vh;
+      width: 200px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      text-align: left;
+      z-index: 10;
+    }
+    .navbar a {
+      text-decoration: none;
+      color: var(--color-body);
+      font-weight: 700;
+      transition: 0.4s ease;
+    }
+    .navbar a:hover, .navbar a.active {
+      color: var(--color-brand);
+      text-shadow: 0 0 10px var(--color-brand);
+    }
+    .section-title {
+      font-size: 48px;
+      margin: 50px 0;
+      letter-spacing: 2px;
+      text-shadow: 0 0 20px var(--color-brand);
+      color: var(--color-heading);
+      text-align: center;
+    }
+    .skills-list {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 50px;
+      max-width: 1000px;
+      margin: auto;
+      margin-left: 220px;
+    }
+    .skills-category {
+      text-align: center;
+    }
+    .skills-category h2 {
+      color: var(--color-brand);
+      text-shadow: 0 0 10px var(--color-brand);
+      font-size: 32px;
+    }
+    .skills-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      margin-top: 20px;
+    }
+    .skill {
+      padding: 20px;
+      background: var(--color-base);
+      border: 2px solid var(--color-brand);
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(224, 247, 128, 0.5);
+      transition: 0.4s;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .skill:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px rgba(224, 247, 128, 0.8);
+      background: var(--color-brand);
+      color: var(--color-base);
+    }
+    footer p {
+      margin-top: 50px;
+      padding: 20px;
+      background: var(--color-base);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+      font-size: 14px;
+      color: var(--color-body);
+      text-align: center;
+    }
+    </style>
+    <script>
+        // Dynamic Content Display
+        window.onload = function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const project = urlParams.get('project');
+
+            if (project === 'sanatana') {
+                document.getElementById('project-title').innerText = "SANATAN VAIDYA";
+                document.getElementById('project-image').src = "images/logo1.jpg";
+                document.getElementById('project-description').innerText = "Ayurvedic AI Chatbot to suggest ancient remedies using BioBERT.";
+                document.getElementById('project-link').href = "https://github.com/Chaitanya890/SANATAN-VAIDYA";
+            }
+
+            if (project === 'hospital') {
+                document.getElementById('project-title').innerText = "HOSPITAL MANAGEMENT";
+                document.getElementById('project-image').src = "images/login.jpg";
+                document.getElementById('project-description').innerText = "Web Application for patient records, doctor schedules using MERN Stack.";
+                document.getElementById('project-link').href = "https://github.com/Chaitanya890/Hospital-Management";
+            }
+
+            if (project === 'portfolio') {
+                document.getElementById('project-title').innerText = "PORTFOLIO WEBSITE";
+                document.getElementById('project-image').src = "images/web-design-portfolio-768x492.png";
+                document.getElementById('project-description').innerText = "Personal Portfolio Website showcasing my projects and skills.";
+                document.getElementById('project-link').href = "https://github.com/Chaitanya890/Portfolio";
+            }
+
+            if (project === 'figma') {
+    document.getElementById('project-title').innerText = "FIGMA UI/UX DESIGNS";
+    document.getElementById('project-image').src = "images/web-design-portfolio-768x492.png";
+    document.getElementById('project-description').innerText = "Designed an interactive and modern landing page for Ecole Global using Figma, focusing on seamless user experience and visually appealing layout.";
+    document.getElementById('project-link').href = "https://www.figma.com/proto/ctlMkVMDiI3QtDPGq2ygqS/ASSESSMENT?node-id=0-1&t=gfEuW3W2oTUn8bRj-1";
+    document.getElementById('project-link').target = "_blank"; 
+}
+
+            };
+    </script>
+</head>
+<body>
+
+
+
+<section class="section skills">
+    <div class="container">
+      <h1 class="section-title">My Projects</h1>
+      <div class="skills-list">
+        <div class="skills-category">
+          <h2> SANATAN-VAIDY</h2>
+          <div class="skills-items">
+            
+            <div class="skill" onclick="window.location.href='https://ayur-bot-frontend.vercel.app/home'"> 
+                <li>It's is an AI-powered chatbot designed to provide Ayurvedic health guidance, personalized remedies, and myth-busting insights.</li>
+                <LI> Provides Ayurvedic treatment suggestions via an interactive platform.</LI>
+                <LI> It leverages Llama3.3, React.js, Node.js, and MongoDB to offer multilingual support and enhance user well-being
+                through holistic practices.</LI></div>
+          </div>
+        </div>
+        <div class="skills-category">
+            <h2> PORTFOLIO</h2>
+            <div class="skills-items">
+              
+              <div class="skill" onclick="window.location.href='https://chaitanya890.github.io/portfolio/'"> 
+                  <li>Started with UI/UX design, focusing on creating intuitive and user-friendly interfaces, and then applied my skills to
+                    develop responsive web applications.</li>
+                  <LI> Passionate about front-end development and learning to enhance user experiences through clean design and efficient
+                    coding..</LI>
+                  
+            </div>
+          </div>
+          <div class="skills-category">
+            <h2> UX/UI DESIGN</h2>
+            <div class="skills-items">
+              
+              <div class="skill" onclick="window.location.href='https://www.figma.com/proto/ctlMkVMDiI3QtDPGq2ygqS/ASSESSMENT?node-id=0-1&t=gfEuW3W2oTUn8bRj-1'"> 
+                  <li>Designed an intuitive and modern landing page for Ecole Global using Figma, focusing on seamless user experience and visually appealing layout.</LI>
+                  <LI> The design incorporates interactive elements with a clean interface to enhance user engagement.</LI></div>
+            </div>
+          </div>
+
+
+
+</body>
+</html>
